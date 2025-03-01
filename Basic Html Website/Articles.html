@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Tags -->
+    <meta name="description" content="My articles" />
+    <meta
+      name="keywords"
+      content="frontend developer, web developer, portfolio, Ozobia Alfred, front-end, javascript, html, css, react, node, tailwind, bootstrap"
+    />
+    <meta name="author" content="Ozobia Alfred" />
+    <!-- OG Tags -->
+    <meta property="og:title" content="Ozobia Alfred's Portfolio" />
+    <meta property="og:description" content="My articles" />
+    <meta property="og:url" content="http://Ozobia-Alfred.dev" />
+    <title>ARTICLES</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/Single Page CV/icons8-cv-stickers-96.png"
+    />
+  </head>
+  <body>
+    <!--Navigaton Bar-->
+    <header>
+      <nav>
+        <div style="text-align: right">
+          <ul
+            style="
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              display: inline-block;
+            "
+          >
+            <li style="display: inline; margin-left: 10px">
+              <a href="index.html">HOMEPAGE</a>
+            </li>
+            <li style="display: inline; margin-left: 10px">
+              <a href="Projects.html">PROJECTS</a>
+            </li>
+            <li style="display: inline; margin-left: 10px">
+              <a href="Articles.html">ARTICLES</a>
+            </li>
+            <li style="display: inline; margin-left: 10px">
+              <a href="Contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--ARTICLES SECTION-->
+    <main>
+      <section>
+        <header style="text-decoration: underline">
+          <h1>ARTICLES</h1>
+        </header>
+      </section>
+
+      <!--Article 1-->
+      <article>
+        <h1>1. HOW I BUILT MY FIRST WEBSITE USING HTML.</h1>
+        <section id="introduction">
+          <h2>INTRODUCTION</h2>
+
+          <p>
+            When I first started learning web development, I wanted to build
+            something more than just a single-page website. I wanted to create a
+            <strong>multi-page website</strong> where each section had its own
+            dedicated page, just like real websites do.My goal was to build a
+            <strong>simple yet well-structured</strong> website with the
+            following pages:
+          </p>
+
+          <ul>
+            <li><strong>Home -</strong> The main landing page</li>
+            <li><strong>Projects -</strong> A section to showcase my work</li>
+            <li>
+              <strong>Articles -</strong> A blog-like section for sharing
+              knowledge
+            </li>
+            <li><strong>Contact -</strong> A way for visitors to reach me</li>
+          </ul>
+
+          <p>
+            Since I was focusing only on
+            <strong>HTML structure </strong> (without CSS or JavaScript), I
+            needed to ensure my code was<strong>
+              clean, semantic, and easy to style later</strong
+            >. This article documents the<strong> step-by-step process</strong>
+            I followed, including <strong>lessons learned</strong> and
+            <strong>mistakes I made</strong> along the way.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="step1">
+          <h2>Step 1 : Planning the Website Structure</h2>
+
+          <p>
+            Before jumping into coding, I took some time to plan my website’s
+            structure. A <strong>well-planned structure</strong> makes a website
+            easier to navigate and update in the future.
+          </p>
+          <p>I decided on the following layout for each page:</p>
+          <ol>
+            <li><strong>A Navigation Bar</strong> (Same on all pages)</li>
+            <li>
+              <strong>Main Content Section</strong> (Different for each page)
+            </li>
+            <li><strong>A Footer</strong></li>
+          </ol>
+          <p>
+            <strong>Lesson Learned: Planning first saves time later.</strong>
+            Without a clear plan, I would have had to rewrite my code multiple
+            times.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="step2">
+          <h2>Step 2: Creating Multiple HTML Pages</h2>
+          <p>With the structure planned, I created separate HTML files:</p>
+          <ul>
+            <li>index.html (Home)</li>
+            <li>projects.html (Projects)</li>
+            <li>articles.html (Articles)</li>
+            <li>contact.html (Contact)</li>
+          </ul>
+          <p>
+            Each file would contain
+            <strong>the same navigation bar</strong> to ensure consistency.
+          </p>
+
+          <p>
+            <strong
+              >Lesson Learned: Consistent elements improve user experience.
+            </strong>
+            Keeping the nav bar same across all pages makes navigation smooth.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="step3">
+          <h2>Step 3: Building a Consistent Navigation Bar</h2>
+          <p>
+            One of the first things I worked on was the navigation bar. Since
+            this element appears on every page, I made sure it was:
+          </p>
+          <ul>
+            <li>
+              <strong>Simple</strong> Just links, no dropdowns or advanced
+              styling
+            </li>
+            <li>
+              <strong>Semantic</strong> Wrapped in a
+              <code>&lt;nav&gt;</code> element
+            </li>
+          </ul>
+          <p>
+            <strong> Lesson Learned: </strong>Since I am using HTML only, I
+            can't make the navigation bar to automatically update in all pages
+            when there is a change.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="step4">
+          <h2>Step 4: Structuring Each Page with Semantic HTML</h2>
+          <p>
+            Instead of using only <code>&lt;div&gt;</code> elements, I used
+            <strong>semantic HTML</strong> to make my code more readable and
+            accessible.
+          </p>
+          <p>
+            For example, my <strong>homepage</strong> (index.html) was
+            structured like this:
+          </p>
+          <ul>
+            <li>
+              <code>&lt;header&gt;</code> - contains the site title and
+              navigation bar
+            </li>
+            <li>
+              <code>&lt;main&gt;</code> - holds the main content of the page
+            </li>
+            <li>
+              <code>&lt;footer&gt;</code> - includes copyright and additional
+              links
+            </li>
+          </ul>
+
+          <p>On the <strong>Projects page</strong> (projects.html), I used:</p>
+
+          <ul>
+            <li>
+              <code>&lt;section&gt;</code> - to group different project
+              categories
+            </li>
+            <li>
+              <code>&lt;article&gt;</code> - to define individual project
+              descriptions
+            </li>
+          </ul>
+
+          <p>For the <strong>Articles page</strong> (articles.html), I used:</p>
+          <ul>
+            <li><code>&lt;article&gt;</code> - for individual blog posts</li>
+          </ul>
+
+          <p>
+            <strong
+              >Lesson Learned: Using semantic tags improves SEO and
+              accessibility.
+            </strong>
+            Search engines and screen readers can better understand the page
+            structure.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="step5">
+          <h2>Step 5: Linking the Pages Together</h2>
+          <p>
+            To make navigation seamless, I added links to each page inside the
+            nav bar.
+          </p>
+          <p>I used relative paths so the links worked correctly:</p>
+          <ul>
+            <code
+              ><li>href="index.html"=Links to Home</li>
+              <li>href="projects.html"=Links to Projects</li>
+              <li>href="articles.html"=Links to Articles</li>
+              <li>href="contact.html"=Links to Contact</li></code
+            >
+          </ul>
+        </section>
+
+        <hr />
+
+        <section id="step6">
+          <h2>Step 6: Adding SEO Meta Tags</h2>
+          <p>
+            Although I wasn't focusing on styling, I wanted my website to be
+            search engine-friendly.
+          </p>
+          <p>
+            So, I added the following meta tags in the
+            <code>&lt;head&gt;</code> section of my homepage:
+          </p>
+          <pre>
+    <code>
+      &lt;meta charset="UTF-8"&gt;
+      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+      &lt;meta name="description" content="A Simple HTML Portfolio Website showcasing the works of Front-End Developer Ozobia Alfred"&gt;
+      &lt;meta name="keywords" content="frontend developer, web developer, portfolio, Ozobia Alfred, front-end, javascript, html, css, react, node, tailwind, bootstrap"&gt;
+      &lt;meta name="author" content="Ozobia Alfred"&gt;
+  </code>
+</pre>
+          <p>
+            Corresponding SEO meta tags were also added to the subsequent pages
+          </p>
+
+          <p>
+            <strong>
+              Lesson Learned: Good SEO starts with structure, not just
+              content.</strong
+            >
+            These tags help search engines understand what the page is about.
+          </p>
+        </section>
+
+        <hr />
+
+        <section id="step7">
+          <h2>Step 7: Adding a Footer with Useful Links</h2>
+          <p>
+            Just like the navigation bar, I wanted a consistent footer on all
+            pages. I included:
+          </p>
+          <ul>
+            <li>Copyright Notice (<code>© all rights reserved 2025 </code>)</li>
+            <li>Links to Social Profiles</li>
+          </ul>
+          <p>
+            <strong
+              >Lesson Learned: A footer makes your site look more complete and
+              professional.</strong
+            >
+            It also helps with navigation, especially for long pages.
+          </p>
+        </section>
+
+        <hr />
+
+        <section>
+          <h2>Conclusion: What I Learned</h2>
+          <p>
+            Building this multi-page website was a<strong>
+              great learning experience!
+            </strong>
+            Here are my biggest takeaways:
+          </p>
+          <ul>
+            <li>
+              <strong>Planning is key</strong>-Sketching the structure first
+              made development smoother.
+            </li>
+            <li>
+              <strong>Consistency matters</strong>-Having the same navigation
+              bar and footer made the site feel more professional.
+            </li>
+            <li>
+              <strong>Semantic HTML is important</strong>-Using<code>
+                &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, and
+                &lt;section&gt;
+              </code>
+              made the code more readable.
+            </li>
+            <li>
+              <strong>SEO starts with good structure</strong>-Simple
+              <strong>meta tags </strong>help search engines understand the page
+              better.
+            </li>
+          </ul>
+          <p><strong> What's Next? </strong></p>
+          <p>Now that my site is structured, the next step is to:</p>
+          <ul>
+            <li>Add <strong> CSS</strong> for styling</li>
+            <li>Improve <strong> responsiveness</strong> for mobile devices</li>
+            <li>Explore <strong> JavaScript</strong> for interactivity</li>
+          </ul>
+          <p>
+            If you're a beginner looking to build your first
+            <strong> multi-page website</strong> , I highly recommend trying
+            this! It's a great way to understand how real websites are
+            structured > .
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <section style="text-align: center">
+        <div>
+          <text>&copy; all rights reserved 2025</text>
+          <a
+            href="https://www.linkedin.com/in/chukwuemeka-ozobia-2b270027b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/Ealfred75">GitHub</a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
